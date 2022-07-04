@@ -8,6 +8,16 @@ public class MainProgram {
 
         // Follow the instructions carefully 
         // and run the tests.
+        String classroom;
+        int seats;
+        
+        classroom = scanner.nextLine();
+        seats =scanner.nextInt();
+        
+        Room room = new Room(classroom,seats);
+        
+        room.print();
+        
     }
 
 }

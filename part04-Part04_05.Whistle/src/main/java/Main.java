@@ -11,5 +11,12 @@ public class Main {
 //        duckWhistle.sound();
 //        roosterWhistle.sound();
 //        duckWhistle.sound();
+        Whistle duckWhistle = new Whistle("Kvaak");
+        Whistle roosterWhistle = new Whistle("Peef");
+        
+        duckWhistle.sound();
+        roosterWhistle.sound();
+        duckWhistle.sound();
+        
     }
 }
