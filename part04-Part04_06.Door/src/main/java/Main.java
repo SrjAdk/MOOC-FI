@@ -9,5 +9,9 @@ public class Main {
 //
 //        alexander.knock();
 //        alexander.knock();
+        Door door = new Door();
+        
+        door.knock();
+        door.knock();
     }
 }
