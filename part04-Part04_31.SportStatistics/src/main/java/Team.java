@@ -6,7 +6,7 @@
 
 public class Team {
     private String teamA,teamB;
-    private int scoreA,scoreB, games, wins;
+    private int scoreA,scoreB;
 
     public Team(String teamA, String teamB, int scoreA, int scoreB) {
         this.teamA = teamA;
