@@ -5,40 +5,39 @@
  */
 
 public class Container {
-   private int first;
+   private int amountInContainer;
    
    
    public Container() {
-       this.first =0;
+       this.amountInContainer =0;
        
     }
    
     public int contains(){
-       return this.first;
+       return this.amountInContainer;
    } 
     
    public void add(int amount){
        if(amount>0){ 
-            this.first += amount;
+            this.amountInContainer += amount;
        }
-       if(this.first>100){
-           this.first =100;
+       if(this.amountInContainer>100){
+           this.amountInContainer =100;
        }
    }
-   
+      
    public void remove(int amount){
-       if(amount<this.first){
-           this.first-=amount;
-       }
-       if(amount>this.first){
-           this.first = 0;
+       if(amount<this.amountInContainer){
+           this.amountInContainer-=amount;
+       }else if(amount>this.amountInContainer){
+           this.amountInContainer = 0;
        }
        
    }
 
     @Override
     public String toString() {
-        return this.first + "/100";
+        return this.amountInContainer + "/100";
     }
    
 }
